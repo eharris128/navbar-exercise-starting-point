@@ -27,6 +27,6 @@ $("#info").on("click", function(event) {
 
 $(".hamburger").on('click', function(event) {
   console.log('hey')
-  $("#nav-bar").removeClass("hidden");
+  $("#nav-bar").toggleClass("hidden");
 })
 });
