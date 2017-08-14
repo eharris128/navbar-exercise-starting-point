@@ -1,27 +1,50 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .hamburger {
-    width: 48px;
-    height: 42px;
-    border: 1px solid #eeeeef;
-    border-radius: 2px;
-    box-shadow: 0 0 2px #eeeeef;
-    padding: 10px 10px;
+  width: 48px;
+  height: 42px;
+  border: 1px solid #eeeeef;
+  border-radius: 2px;
+  box-shadow: 0 0 2px #eeeeef;
+  padding: 10px 10px;
 }
 
 .hamburger-stripe {
-    background-color: #6799ff;
-    height: 3px;
-    margin-bottom: 5px;
+  background-color: #6799ff;
+  height: 3px;
+  margin-bottom: 5px;
 }
 
 /* Add your CSS here */
+/* @media (max-width: 720px) {
+    .hamburger {
+         display: initial; 
+    } 
+} */
 
+ .hidden {
+    display: none;
+} 
+
+ /* .icons .list-item {
+    display: none;
+}  */
+
+
+
+@media (min-width: 576px) {
+  .hamburger {
+    display: none;
+  }
+  body {
+    color: blue;
+  }
+}
