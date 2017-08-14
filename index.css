@@ -6,6 +6,48 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  color: #6799ff;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #6799ff;
+}
+
+#courses:hover, #info:hover, .empty:hover {
+  border-bottom: 1px solid #6799ff;
+}
+#nav-bar {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+
+li {
+  /* display: inline; */
+}
+
+.container {
+  background-color: blue;
+}
+
+#sign-in {
+  flex: 2;
+  justify-content: flex-end;
+}
+
+svg {
+  margin-left: 10px;
+  align-self: center;
 }
 
 .hamburger {
@@ -38,7 +80,15 @@ body {
     display: none;
 }  */
 
+li {
+  list-style-type: none;
+}
 
+@media (max-width: 576px) {
+  #nav-bar {
+    display: none;
+  }
+}
 
 @media (min-width: 576px) {
   .hamburger {
@@ -47,4 +97,5 @@ body {
   body {
     color: blue;
   }
+
 }

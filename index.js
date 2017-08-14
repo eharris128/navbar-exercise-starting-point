@@ -1,10 +1,12 @@
 "use strict";
-$(".courses").on("click", function(event) {
-  $(".courses").removeClass("hidden")
+$("#courses").on("click", function(event) {
+  $(".courses").toggleClass("hidden")
+  $(".info").addClass("hidden");
 });
 
-$(".info").on("click", function(event) {
-  $(".info").removeClass("hidden")
+$("#info").on("click", function(event) {
+  $(".info").toggleClass("hidden")
+  $(".courses").addClass("hidden");
 });
 
 // Look at this.attr() or event.target.attr()
